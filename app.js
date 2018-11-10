@@ -8,6 +8,8 @@
 // The user either runs out of guesses (loses++) or the word is fully displayed (wins++)
 // stop the game, offer option to play again
 
+// Limit to only lower case no numbers etc.
+
 var possibleTeams = [
     "Arsenal",
     "Aston Villa",
@@ -77,13 +79,24 @@ const startGame = () => {
     randomlyPickTeam();
     gameStarted = true;
     console.log("The Game has started ")
+    playGame();
 };
 
-const separatePickTeam = () => {
-
-};
+const playGame = () => {
+    document.onkeypress = function (event){
+        var x = event.keyCode;               
+        var y = String.fromCharCode(x); 
+    
+        console.log(y)
+    };
+}
 
 startGame();
 // if (gameStarted == false) {document.onkeyup = function(e){
 //     if(e.keyCode == 32){
 //        
+
+
+// var game = {}
+
+

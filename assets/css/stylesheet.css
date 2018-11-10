@@ -1,0 +1,13 @@
+body {
+    background-image: url("../img/soccer_field_311115.jpg");
+}
+
+.row {
+border: 10px solid black;
+margin-top: 35%;
+text-align: center;
+}
+
+h1 {
+text-align: center 
+}
