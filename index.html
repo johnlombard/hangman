@@ -22,19 +22,19 @@
 </head>
 
 <body>
-    <!-- <div class="container start">
+     <div class="container start">
            <div class ="row ">
                <div class = "col-12">
                <h1>Guess the English Football Club </h1>
                <h3>You Alright? Press SPACE to play</h3>
                </div>
            </div>
-       </div>    -->
-    <div class="container during">
+       </div> 
+     <div class="container during">
         <div class="row ">
            
             <div class="col-12">
-                <h2>Guesses Left: 0</h2>
+                <h2 class="remainingGuesses">Guesses Left: 0</h2>
                 <h2>Wins: 0</h2>
                 <h2>Losses: 0</h2>
                 <h2></h2>
@@ -45,46 +45,43 @@
         <div class="row ">
             <div class="col-12">
                 <h1>Test </h1>
-                <h3>- - - - - - - - </h3>
+                <h3 id = "letters">Here</h3>
             </div>
         </div>
 
         <div class="row  ">
             <div class="col-12">
-                <h1>Letters Guessed </h1>
-                <h3>You Alright? Press SPACE to play</h3>
+                <h1 >Letters Guessed: </h1>
+                <h3 class = "lettersGuessed">Press</h3>
             </div>
-        </div>
+        </div> 
     </div>
 
-<!-- <div class="container end">
+<div class="container won">
            <div class ="row ">
                <div class = "col-12">
-               <h1>Guess the English Football Club </h1>
-               <h3>You Alright? Press SPACE to play</h3>
+               <h1>3 Points!!!</h1>
+               <h2>Record 0-0-0 </h2>
+               <h3>Press SPACE to play again</h3>
                </div>
            </div>
-       </div>    -->
+       </div>    
 
+        <div class="container lost">
+        <div class ="row ">
+            <div class = "col-12">
+            <h1>Tough break. 0 Points</h1>
+            <h2 class = "record">Record 0-0 </h2>
+            <h3>Press SPACE to play again</h3>
+            </div>
+        </div>
+    </div>     
 
 
 
 
     <script>
-
-//        $(".during").hide(100);
-// $(window).keypress(function (e) {
-//   if (e.key === ' ' || e.key === 'Spacebar') {
-//     // ' ' is standard, 'Spacebar' was used by IE9 and Firefox < 37
-//     e.preventDefault()
-
-//     $(".start").hide(100);
-//     $(".during").show(100);
-//   }
-// })
-
-
-    </script>
+// $("#letters").html("Hello    </script>
 </body>
 
 </html>
